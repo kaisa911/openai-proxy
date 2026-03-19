@@ -1,8 +1,13 @@
 {
+  "version": 2,
   "rewrites": [
     {
-      "source": "/(.*)",
-      "destination": "https://api.openai.com/$1"
+      "source": "/backend-api/(.*)",
+      "destination": "https://chatgpt.com/backend-api/$1"
+    },
+    {
+      "source": "/v1/(.*)",
+      "destination": "https://api.openai.com/v1/$1"
     }
   ]
 }
